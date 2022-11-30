@@ -1,0 +1,15 @@
+body{
+    background-color: grey;
+    font-family:'Trebuchet MS', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+.links{
+    color: red;
+}
+.topics{
+    color: aquamarine;
+}
+.italics{
+    font-style: italic;
+}

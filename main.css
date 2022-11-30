@@ -1,0 +1,38 @@
+body{
+    line-height: 1;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.headerdiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(images/pngtree-cute-cartoon-hand-painted-poster-background-picture-image_140751.jpg);
+    background-size: cover;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(images/pngtree-cute-cartoon-hand-painted-poster-background-picture-image_140751.jpg);
+    background-size: cover;
+}
+img {
+    border-radius: 50%;
+  }
+.picdiv{
+    padding-left: 40px;
+}
+
+h1.name{
+    padding-left: 20px;
+}
+.listItems{
+    color: blue;
+    padding-left: 60px;
+}
+.foot{
+    padding-left: 40px;
+}

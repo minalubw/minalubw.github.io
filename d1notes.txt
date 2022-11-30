@@ -1,0 +1,17 @@
+W1 D1
+IP - stateless
+
+ipv4  - 32bit encryption
+ipv6 - 128bit encryption
+
+
+control protocols- 
+  - TCP(stateful) - waits for response 
+  - UDP - fires and forget
+
+
+DNS
+  - maps url with IP addresses
+URL 
+  - an identifier for the location of a document on a website server
+google query string q
