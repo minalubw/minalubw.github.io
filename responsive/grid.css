@@ -79,19 +79,13 @@ body{
        
 }
 @media screen and (max-width: 600px){
-    .container {
-       grid-area: c;
-       width: 100%;
-       display: flex;
-    }
-  
-    .child-cont1{
-        width: 50%;
-    }
-    .child-cont2{
-        width: 50%;
-    }
-    .child-cont3{
-        width: 100%;
+    .container{
+        display: grid;
+        grid-template-areas:
+          'h h'
+          'm m'
+          'c1 c2'
+          'c3 c3'
+          'f f' 
     }
 }
