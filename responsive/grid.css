@@ -29,8 +29,9 @@
 
 .container {
     grid-area: c;
-    width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    'c1 c2 c3'
 
 }
 .container > div{
@@ -43,18 +44,15 @@
 .child-cont1{
     grid-area: c1;
     background-color: rgb(166, 162, 157);
-    width: 33.3%;
+   
 }
 .child-cont2{
     grid-area: c2;
-    background-color: rgb(218, 187, 142);
-    width: 33.3%;
-    
+    background-color: rgb(218, 187, 142);    
 }
 .child-cont3{
     grid-area: c3;
     background-color: rgb(201, 143, 69);
-    width: 33.3%;
 }
 
 #footer{
@@ -82,10 +80,7 @@ body{
     .container{
         display: grid;
         grid-template-areas:
-          'h h'
-          'm m'
           'c1 c2'
           'c3 c3'
-          'f f' 
     }
 }
