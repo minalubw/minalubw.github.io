@@ -1,0 +1,97 @@
+#banner{
+    grid-area: h;
+}
+#banner > h1{
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+    background-color: aquamarine;
+    margin: 0;
+}
+
+#nav{
+    grid-area: m;
+    display: flex;
+    width: 100%;
+    width: auto;
+    margin: 0;
+    background-color: darkgreen;
+    color: white;
+}
+#nav > a{
+    color: white;
+    margin: 0;
+    padding: 2%;
+    text-align: left;
+    border-right: 2px solid black;
+    text-decoration: none;
+}
+
+.container {
+    grid-area: c;
+    width: 100%;
+    display: flex;
+
+}
+.container > div{
+    padding-left: 1%;
+    padding-top: 2%;
+    padding-bottom: 20%;
+    margin: 0;
+    text-align: left;
+}
+.child-cont1{
+    grid-area: c1;
+    background-color: rgb(166, 162, 157);
+    width: 33.3%;
+}
+.child-cont2{
+    grid-area: c2;
+    background-color: rgb(218, 187, 142);
+    width: 33.3%;
+    
+}
+.child-cont3{
+    grid-area: c3;
+    background-color: rgb(201, 143, 69);
+    width: 33.3%;
+}
+
+#footer{
+    grid-area: f;
+    padding: 4%;
+    display: flex;
+    width: auto;
+    margin: 0;
+    background-color: darkgreen;
+    color: white;   
+    justify-content: center;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+     'h h h'
+     'm m m'  
+     'c c c'
+     'f f f'
+
+       
+}
+@media screen and (max-width: 600px){
+    .container {
+       grid-area: c;
+       width: 100%;
+       display: flex;
+    }
+  
+    .child-cont1{
+        width: 50%;
+    }
+    .child-cont2{
+        width: 50%;
+    }
+    .child-cont3{
+        width: 100%;
+    }
+}

@@ -1,0 +1,67 @@
+#banner > h1{
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+    background-color: aquamarine;
+    margin: 0;
+}
+
+#nav{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    width: auto;
+    margin: 0;
+    background-color: darkgreen;
+    color: white;
+}
+#nav > a{
+    color: white;
+    margin: 0;
+    padding: 2%;
+    text-align: left;
+    border-right: 2px solid black;
+    text-decoration: none;
+}
+.flex-container {
+    width: 100%;
+    display: flex; 
+}
+.flex-container > div{
+    padding-left: 1%;
+    padding-top: 2%;
+    padding-bottom: 20%;
+    margin: 0;
+    width: 33.3%;
+    text-align: left;
+}
+.child-cont1{
+    background-color: rgb(202, 199, 196);
+   
+}
+.child-cont2{
+    background-color: rgb(169, 144, 114);
+    
+}
+.child-cont3{
+    background-color: rgb(238, 180, 104);
+}
+
+#footer{
+    padding: 4%;
+    display: flex;
+    flex-flow: wrap;
+    width: auto;
+    margin: 0;
+    background-color: darkgreen;
+    color: white;   
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+    .flex-container {
+        width: 100%;
+        display: flex; 
+        flex-flow: wrap;
+    }
+}
