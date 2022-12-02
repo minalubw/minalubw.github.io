@@ -60,7 +60,6 @@
 
 @media screen and (max-width: 600px){
     .flex-container {
-        width: 100%;
         display: flex; 
         flex-flow: wrap;
     }
