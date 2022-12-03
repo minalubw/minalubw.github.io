@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<title>ASCIImation</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="ascii.css" type="text/css" rel="stylesheet">
-		<script src="animations.js"></script>
-		<script src="ascii.js"></script>
-    </head>
-	
-    <body>
-        <header>CS472: ASCII Animation Viewer</header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCIImation</title>
+    <link href="ascii.css" type="text/css" rel="stylesheet">
+    <script src="animation.js" type="text/javascript"></script>
+    <script src="ascii.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>CS472: ASCII Animation Viewer</header>
 		<div class="container">
-			<textarea id="text-area" cols="80" rows="20"></textarea>
+			<textarea id="text-area" wrap="soft" cols="80" rows="20"></textarea>
 			<fieldset>
 				<legend>Play Controls:</legend>
 				<button id="start">Start</button>
@@ -32,12 +32,12 @@
 			<fieldset>
 				<legend>Size:</legend>
 				<select id="fontsize">
-					<option value="Tiny">Tiny</option>                                              
-					<option value="Small">Small</option>                        
-					<option value="Medium" selected="selected">Medium</option>                                           
-					<option value="Large">Large</option>                        
-					<option value="Extra Large">Extra Large</option>                       
-					<option value="XXL">XXL</option>                        
+					<option value="tiny">Tiny</option>                                              
+					<option value="small">Small</option>                        
+					<option value="medium" selected="selected">Medium</option>                                           
+					<option value="large">Large</option>                        
+					<option value="x-large">Extra Large</option>                       
+					<option value="xx-large">XXL</option>                        
 				</select>
 			</fieldset>
 			<fieldset>
@@ -47,18 +47,18 @@
 		</div>
         <div id="validate">
             <a href="https://validator.w3.org/nu/?doc=https://minalubw.github.io/BasicAnimation/ascii.html">
-                <img src="w3c-html.png" alt="html validator">
-            </a><br>
-            <a href="http://jigsaw.w3.org/css-validator/validator?uri=[your_url_here]">
-                <img src="w3c-css.png" alt="Valid CSS!"></a><br>
+                <img src="https://manalabs.org/img/w3c-html.png" alt="check">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://minalubw.github.io/BasicAnimation/ascii.html">
+                <img style="border:0;width:88px;height:31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
 
-            <a href="http://mumstudents.org/jshint/check.php?uri=[your_url_here]">
-		<img src="jslint.png" alt="JavaScript Lint">
-			</a>
-
+            <a href="https://mumstudents.org/jshint/check.php?v=jslint&uri=https://minalubw.github.io/BasicAnimation/ascii.html">
+                <img src="http://mumstudents.org/jscheck/jscheck-small.png" alt="miustudents JS check"/>
+            </a>
 
         </div>
 
-    
-
-</body></html>
+</body>
+</html>
