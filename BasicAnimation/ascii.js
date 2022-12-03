@@ -31,7 +31,7 @@ window.onload = function() {
     };
 
     document.getElementById("turbo").onchange = function() {
-        speed = document.getElementById("turbo").checked ? 50 : 250;
+        changeSpeed = document.getElementById("turbo").checked ? 50 : 250;
         resetInterval();
     };
 
