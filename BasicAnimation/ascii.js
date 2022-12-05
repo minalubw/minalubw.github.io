@@ -1,27 +1,27 @@
 window.onload = function() {
     "use strict";
-    var current = null;
-    var changeSpeed = 250;
+    var timer = null;
+    var speed = 250;
     var frame = 0;
     var size = document.getElementById("fontsize").value;
 
     document.getElementById("start").onclick = function() {
         toggleButton();
-        current = setInterval(display, changeSpeed);
+        timer = setInterval(show, speed);
     };
 
     document.getElementById("stop").onclick = function() {
-        if(current){
-            clearInterval(current);
-            current = null;
+        if(timer){
+            clearInterval(timer);
+            timer = null;
         } 
-        display("notransition");
+        show("idle");   
         toggleButton();
     };
 
     document.getElementById("animation").onchange = function() {
         frame = 0;
-        display("notransition");
+        show("idle"); 
     };
 
     document.getElementById("fontsize").onchange = function() {
@@ -31,7 +31,7 @@ window.onload = function() {
     };
 
     document.getElementById("turbo").onchange = function() {
-        changeSpeed = document.getElementById("turbo").checked ? 50 : 250;
+        speed = document.getElementById("turbo").checked ? 50 : 250;
         resetInterval();
     };
 
@@ -41,27 +41,28 @@ window.onload = function() {
         document.getElementById("animation").disabled = !document.getElementById("animation").disabled;
     }
 
-    function display(state) {
+    function show(state) {
         let txtarea = document.getElementById("text-area");
         
-        if(state === "notransition"){
+        if(state === "idle"){
             txtarea.value = ANIMATIONS[document.getElementById("animation").value];
         } else {
-            const animationSections = ANIMATIONS[document.getElementById("animation").value].split("=====");
+            let parts = ANIMATIONS[document.getElementById("animation").value].split("=====");
 
-            if(animationSections.length === frame){
+            if(parts.length === frame){
                 frame = 0;
             }
     
-            txtarea.value = animationSections[frame];
+            txtarea.value = parts[frame];
         }
+
         frame++;
     }
 
     function resetInterval(){
-        if(current){
-            clearInterval(current);
-            current = setInterval(display, changeSpeed);
+        if(timer){
+            clearInterval(timer);
+            timer = setInterval(show, speed);
         }
     }
 };
