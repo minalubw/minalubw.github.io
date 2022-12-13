@@ -11,6 +11,10 @@ body{
     background-image: url(images/pngtree-cute-cartoon-hand-painted-poster-background-picture-image_140751.jpg);
     background-size: cover;
 }
+#main{
+    display: flex;
+    justify-content: center;
+}
 .footer {
     width: 100%;
     display: flex;
