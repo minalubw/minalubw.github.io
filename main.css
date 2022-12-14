@@ -15,6 +15,9 @@ body{
     display: flex;
     justify-content: center;
 }
+.part{
+    padding: 5%;
+}
 .footer {
     width: 100%;
     display: flex;
