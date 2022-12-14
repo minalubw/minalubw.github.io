@@ -1,7 +1,7 @@
 $(()=>{
     $("#start").click(function(){
         $("#status").text("Game Started!");
-        $(".example").text("0%");
+        $(".example").text("In progress..");
     });
     
     $(".boundary").mouseenter(function(){
@@ -14,14 +14,14 @@ $(()=>{
     $("#end").mouseenter(function(){
         if( $("#status").text().indexOf("Started!") > 0){
             $("#status").text("You won! Click S to start again.");
-            $(".example").text("100%");
+            $(".example").text("Ended!");
             alert("Congratulations. You Won!");
            
         }
     });
 
     $("#maze").mouseleave(function(){
-        if( $("#status").text().indexOf("Started!") > 0){
+        if($("#status").text().indexOf("Started!") > 0){
             $("#status").text("You lost! Click S to start again.");
             alert("You Lost!");
         }
