@@ -53,4 +53,3 @@ class Bank {
         return this.accountList.reduce((accum, elem) => (accum !== "" ? accum + "\n" : "" ) + elem.endOfMonth(), '');
     }
 }
-    
