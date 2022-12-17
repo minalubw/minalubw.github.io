@@ -7,7 +7,7 @@
     "serve": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Minalu",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.8",
